@@ -2,7 +2,6 @@ package eu.laramartin.reportcard;
 
 import java.util.ArrayList;
 import java.util.List;
-
 /**
  * Created by Lara on 28/08/2016.
  */
@@ -72,4 +71,10 @@ public class ReportCard {
     public String toString() {
         return "";
     }
+
+    public String printReportCard() {
+        return "";
+    }
+
+
 }
