@@ -67,14 +67,36 @@ public class ReportCard {
         return studentId;
     }
 
+    public int averageGrade(){
+        int averageGrade = 0;
+        return averageGrade;
+    }
+
+    public String subjectWithGradeAndAttendance(int index) {
+        List<String> subjects = getSubjects();
+        List<Integer> grades = getGrades();
+        List<Integer> attendance = getAttendance();
+
+        String subjectWithGradeAndAttendance = subjects.get(index) + " with grade " +
+                Integer.toString(grades.get(index)) + " with " +
+                Integer.toString(attendance.get(index)) + "days of attendance";
+
+        return subjectWithGradeAndAttendance;
+    }
+
+    public String allSubjectsWithGradesAndAttendance() {
+        String allSubjectsWithGradesAndAttendance = "";
+
+        for (int i = 0; i < subjects.size(); i++) {
+            allSubjectsWithGradesAndAttendance += (subjectWithGradeAndAttendance(i) + "\n");
+        }
+
+        return allSubjectsWithGradesAndAttendance;
+    }
+
     @Override
     public String toString() {
+        String filledReportCard = ""
         return "";
     }
-
-    public String printReportCard() {
-        return "";
-    }
-
-
 }
