@@ -95,7 +95,8 @@ public class ReportCard {
         String allSubjectsWithGradesAndAttendance = "";
 
         for (int i = 0; i < subjects.size(); i++) {
-            allSubjectsWithGradesAndAttendance += (getStringOfOneSubjectWithGradeAndAttendance(i) + "\n");
+            allSubjectsWithGradesAndAttendance +=
+                    (getStringOfOneSubjectWithGradeAndAttendance(i) + "\n");
         }
 
         return allSubjectsWithGradesAndAttendance;
