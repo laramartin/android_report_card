@@ -21,7 +21,7 @@ public class ReportCard {
     List<Integer> attendance;
 
 
-    // constructor requires the studendId because is mandatory
+    // constructor requires the studentId because is mandatory
     public ReportCard(int studentId) {
         this.studentId = studentId;
         this.subjects = new ArrayList<>();
@@ -104,9 +104,11 @@ public class ReportCard {
     @Override
     public String toString() {
         String filledReportCard = "Student ID: " + Integer.toString(studentId) + "\n" +
-                "Subjects evaluated with grades and days of attendance:\n" +
+                "School: " + getSchoolName() + "\n" +
+                "Subjects evaluated:\n" +
                 getStringOfAllSubjectsWithGradesAndAttendance() +
-                "Average grade: " + getAverageGrade();
+                "Average grade: " + getAverageGrade() + "\n"+
+                "Message from the teacher: " + getMessageToParents();
         return filledReportCard;
     }
 }
