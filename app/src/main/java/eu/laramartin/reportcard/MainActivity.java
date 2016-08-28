@@ -2,6 +2,7 @@ package eu.laramartin.reportcard;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         String messageToParents = "Have a great summer!";
         studentOne.setMessageToParents(messageToParents);
 
+        Log.v("MainActivity", "studentOne: " + studentOne);
     }
 
 }
